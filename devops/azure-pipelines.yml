@@ -5,7 +5,7 @@ trigger:
 - master
 
 pool:
-  vmImage: $(agentImage)
+  vmImage: windows-latest
 
 jobs:
 - job: LoadAgentNode1
@@ -24,66 +24,3 @@ jobs:
   steps:
     - template: rupet-template.yml
 
-- job: LoadAgentNode3
-  displayName: Rupet3
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode4
-  displayName: Rupet4
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode5
-  displayName: Rupet5
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode6
-  displayName: Rupet6
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode7
-  displayName: Rupet7
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode8
-  displayName: Rupet8
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode9
-  displayName: Rupet9
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
-
-- job: LoadAgentNode10
-  displayName: Rupet10
-  continueOnError: true
-  workspace:
-    clean: outputs
-  steps:
-    - template: rupet-template.yml
